@@ -1,16 +1,12 @@
 <div align="center">
 
-# 🔥 frontend-crack
-
+# 🔥 Frontend-crack
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Performance](https://img.shields.io/badge/Performance-FF6B35?style=for-the-badge&logo=speedtest&logoColor=white) ![Essential Concepts](https://img.shields.io/badge/Essential_Concepts-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)
 ### The Last-Minute Frontend Interview Survival Guide
 
 *20 must-know topics — explained simply, with code, diagrams & real interview Q&A*
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/frontend-crack?style=social)](https://github.com/yourusername/frontend-crack/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/frontend-crack?style=social)](https://github.com/yourusername/frontend-crack/network/members)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yourusername/frontend-crack/pulls)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![GitHub stars](https://img.shields.io/github/stars/imran9663/frontend-crack?style=social)](https://github.com/imran9663/frontend-crack/stargazers) [![GitHub forks](https://img.shields.io/github/forks/imran9663/frontend-crack?style=social)](https://github.com/imran9663/frontend-crack/network/members) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/imran9663/frontend-crack/pulls) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br/>
 
 > 💡 **Bookmark this repo.** Whether you have 1 week or 1 hour before your interview — this guide has you covered.
@@ -19,10 +15,10 @@
 
 ⭐ **If this helps you land your dream job, please star the repo and share it with fellow developers!** ⭐
 
-[🍴 Fork it](https://github.com/yourusername/frontend-crack/fork) · [⭐ Star it](https://github.com/yourusername/frontend-crack) · [🐛 Report an issue](https://github.com/yourusername/frontend-crack/issues)
+[🍴 Fork it](https://github.com/imran9663/frontend-crack/fork) · [⭐ Star it](https://github.com/imran9663/frontend-crack) · [🐛 Report an issue](https://github.com/imran9663/frontend-crack/issues)
 
 </div>
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ## 📖 Table of Contents
@@ -62,11 +58,11 @@
 | 18 | [Error Boundaries & Error Handling](#18-error-boundaries--error-handling) |
 | 19 | [Browser Storage](#19-browser-storage) |
 | 20 | [REST APIs & HTTP Methods](#20-rest-apis--http-methods) |
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ## 🟡 JavaScript
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 1. Closures & Scope
@@ -75,7 +71,7 @@
 > A **closure** is a function that **remembers the variables from its outer scope** even after the outer function has finished executing.
 
 Think of it like a **backpack** 🎒 — when an inner function is created, it packs all the surrounding variables into a backpack and carries them wherever it goes.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -190,14 +186,14 @@ counterB.increment(); // 11 — counterB has its own count
 - **`var` in loops** → use `let` instead
 - **Confusing scope with `this`** → they are completely separate concepts
 - **Memory leaks** → closures keep their outer scope alive in memory
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 2. Event Loop & Async
 
 #### 📌 Definition
 > The **Event Loop** is the mechanism that allows JavaScript (which is **single-threaded**) to handle asynchronous operations without blocking the main thread.
-
+><br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -276,7 +272,7 @@ console.log('5');           // sync
 - `setTimeout(fn, 0)` does NOT mean "run immediately" — it's still a macrotask
 - Heavy synchronous loops **block the Event Loop** and freeze the UI
 - Infinite microtask chains starve the macrotask queue
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 3. Promises & Async/Await
@@ -284,7 +280,7 @@ console.log('5');           // sync
 #### 📌 Definition
 > A **Promise** is an object representing the eventual result of an async operation. It can be **pending**, **fulfilled**, or **rejected**.
 > **Async/Await** is syntactic sugar over Promises that makes async code read like synchronous code.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -395,7 +391,7 @@ const firstSuccess = await Promise.any([p1, p2, p3]);
 - **Sequential awaits** when requests are independent = wasted time. Use `Promise.all` to run them in parallel.
 - **Unhandled rejections** will crash Node.js in newer versions — always `.catch()` or `try/catch`
 - Forgetting that `async` functions always return a Promise — remember to `await` them at the call site
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 4. Hoisting & This Keyword
@@ -403,7 +399,7 @@ const firstSuccess = await Promise.any([p1, p2, p3]);
 #### 📌 Definition
 > **Hoisting** is JavaScript's behaviour of moving declarations to the top of their scope before execution.
 > **`this`** is a keyword that refers to the object currently executing the function — its value depends entirely on *how* the function is called.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -529,14 +525,14 @@ class Timer {
 - **`var` hoisting surprise:** `var` hoisted as `undefined` — reading it before assignment doesn't throw, it just silently returns `undefined`
 - **Arrow functions as object methods** — avoid using arrow functions as methods if you need `this` to refer to the object
 - **`this` in callbacks** — passing a method as a callback loses its `this` binding; use `.bind()` or an arrow wrapper
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 5. Prototypes & Inheritance
 
 #### 📌 Definition
 > JavaScript inheritance is **prototype-based**. Every object has a hidden link (`[[Prototype]]`) to another object. When a property is not found on an object, JavaScript automatically walks up this **prototype chain** until it finds it or hits `null`.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -660,11 +656,11 @@ const dict = Object.create(null);
 - **Modifying built-in prototypes** (`Array.prototype.myFn = ...`) — dangerous, breaks third-party code
 - **Forgetting `super()` in a subclass constructor** — always call `super()` before using `this`
 - **`instanceof` check can fail** across iframes/windows because each has its own prototype chain
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ## 🔵 React
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 6. useState & useEffect
@@ -672,7 +668,7 @@ const dict = Object.create(null);
 #### 📌 Definitions
 > **`useState`** — A hook that adds a reactive state variable to a function component. Changing it **triggers a re-render**.
 > **`useEffect`** — A hook for synchronising a component with an **external system** (API, DOM, timer, subscription) after rendering.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -786,14 +782,14 @@ function UserProfile({ userId }) {
 - **Infinite loop:** effect updates state that is in its own dependency array → re-render → effect → re-render...
 - **`async` directly in `useEffect`:** async functions return a Promise; React doesn't accept that as a cleanup function. Define async inside and call it.
 - **Missing dependencies:** always include all values the effect reads from the component scope
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 7. Context API & useContext
 
 #### 📌 Definition
 > **Context API** solves **prop drilling** — passing data through many intermediate components that don't need it just to reach a deeply nested component that does. Context creates a broadcast channel that any component in the subtree can subscribe to.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -880,7 +876,7 @@ function ThemeToggle() {
 - **Not memoizing the context value** — `value={{ theme, setTheme }}` creates a new object on every render → all consumers re-render even if `theme` didn't change. Fix: `useMemo`.
 - **One giant context** — split contexts by update frequency: `AuthContext`, `ThemeContext`, `LocaleContext` separately
 - **Using Context for everything** — keep local state local; escalate to Context only when truly needed across the tree
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 8. Custom Hooks
@@ -889,7 +885,7 @@ function ThemeToggle() {
 > A **custom hook** is a JavaScript function whose name starts with `use` and that calls other React hooks. It lets you extract reusable stateful logic out of components — without creating extra components or using HOC/render prop patterns.
 
 **Key rule:** Custom hooks share **logic**, not **state** — each component that uses a custom hook gets its own independent state.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -978,14 +974,14 @@ function PostList() {
 - **Forgetting the `use` prefix** — lint rules won't apply, conditional hook calls go undetected
 - **Too granular** — if a custom hook wraps just one hook call with no extra logic, it adds indirection for no benefit
 - **Returning too much** — expose a clean, minimal interface from your hook; hide internal implementation details
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 9. Component Lifecycle
 
 #### 📌 Definition
 > Every React component goes through three lifecycle phases: **Mounting** (added to the DOM), **Updating** (re-rendered due to state/prop changes), and **Unmounting** (removed from the DOM).
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1065,7 +1061,7 @@ useEffect(() => {
 - **React 18 Strict Mode** runs effects twice (mount → unmount → mount) in development — this is intentional to catch cleanup bugs
 - **The cleanup function runs before every re-run** of the effect, not only on unmount — this surprises many developers
 - **`useLayoutEffect` on the server** — throws an error during SSR (server-side rendering). Use `useEffect` for SSR-compatible code
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 10. State Management — Redux / Zustand
@@ -1073,7 +1069,7 @@ useEffect(() => {
 #### 📌 Definitions
 > **Redux** — A state container with a strict pattern: one global store, actions to describe changes, pure reducer functions to apply them. Predictable, debuggable, powerful.
 > **Zustand** — A lightweight, unopinionated state manager. Less boilerplate, same power for most use cases.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1187,18 +1183,18 @@ function Cart() {
 - **Redux for server state** — an anti-pattern. React Query handles caching and refetching; Redux doesn't.
 - **Using Redux too early** — adds massive boilerplate for simple apps. Start with local state and escalate.
 - **Context for high-frequency updates** — every consumer re-renders on change. Zustand handles this with selective subscriptions.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ## 🟢 Performance & Optimization
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 11. Code Splitting & Lazy Loading
 
 #### 📌 Definition
 > **Code splitting** breaks your JavaScript bundle into smaller chunks. **Lazy loading** defers downloading those chunks until they are actually needed — users only download code for the parts of the app they actually visit.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1278,7 +1274,7 @@ function NavBar() {
 - **Lazy loading above-the-fold content** → hurts LCP
 - **No Suspense boundary** → React throws an error when a lazy component is pending
 - **Over-splitting** → too many small chunks means too many network requests; find the right balance
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 12. Memoization — useMemo & useCallback
@@ -1287,7 +1283,7 @@ function NavBar() {
 > **`useMemo`** — Caches the **result** of a computation. Re-computes only when dependencies change.
 > **`useCallback`** — Caches a **function reference**. Returns the same function between renders.
 > **`React.memo`** — Wraps a component so it only re-renders if its **props changed**.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1370,14 +1366,14 @@ const handleClick = useMemo(() => () => doSomething(id), [id]);
 - **`React.memo` without `useCallback`** — if the parent re-renders and creates a new function reference, `React.memo` sees a "changed" prop and re-renders anyway. They must work together.
 - **Wrong deps** — missing deps = stale values (bugs); extra deps = cache invalidates too often (defeats purpose)
 - **Memoizing cheap operations** — don't `useMemo` for simple arithmetic or string concatenation; the memoization overhead outweighs the savings
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 13. Virtual DOM & Reconciliation
 
 #### 📌 Definition
 > The **Virtual DOM** is a lightweight JavaScript object tree that mirrors the real DOM. When state changes, React creates a new Virtual DOM tree, **diffs** it against the previous one (reconciliation), and applies only the necessary changes to the real DOM.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1443,14 +1439,14 @@ Key APIs:
 - **Index as key** — causes wrong components to receive wrong state after add/remove/reorder
 - **Re-render ≠ DOM update** — React can re-render (call your function) many times but only update the DOM where the diff shows actual changes. Re-renders are cheaper than DOM updates.
 - **Controlling when reconciliation runs** — use `React.memo`, `shouldComponentUpdate`, or `PureComponent` to bail out of reconciliation for components that haven't changed
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 14. Bundle Optimization
 
 #### 📌 Definition
 > Every KB of JavaScript must be downloaded, parsed, and executed before your app is interactive. **Bundle optimisation** reduces this cost through tree shaking, minification, compression, code splitting, and smart dependency management.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1513,14 +1509,14 @@ npm install --save-dev webpack-bundle-analyzer
 - **Not checking bundle size before shipping** — use `bundlephobia.com` before installing any npm package
 - **Skipping compression** — even a well-optimised bundle is slow without gzip/brotli on the server
 - **Too many chunks** — over-splitting creates too many HTTP requests; balance chunk count vs size
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 15. Web Vitals & Performance Metrics
 
 #### 📌 Definition
 > **Core Web Vitals** are Google's user-centred performance metrics. They measure real-world user experience and **directly affect your SEO ranking**. Every frontend developer must know these.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1604,11 +1600,11 @@ img {
 - **Optimising for Lighthouse only** — lab score ≠ real user experience. Field data reflects real devices and slow networks.
 - **Images without dimensions** — the #1 cause of CLS. Always set `width` and `height` attributes.
 - **FID vs INP confusion** — FID (First Input Delay) was replaced by INP (Interaction to Next Paint) in March 2024. Know both.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ## 🩷 Essential Concepts
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 16. Event Delegation & Bubbling
@@ -1616,7 +1612,7 @@ img {
 #### 📌 Definitions
 > **Event Bubbling** — When an event fires on an element, it propagates upward through every ancestor in the DOM tree.
 > **Event Delegation** — Attaching a single listener on a parent to handle events for all its children, using bubbling.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1694,7 +1690,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
 - **Not all events bubble** — `focus`, `blur`, `load`, `scroll` don't bubble. Use `focusin`/`focusout` for delegation on focus events.
 - **Overusing `stopPropagation`** — it can break other listeners up the chain (analytics, tooltip closers). Use it deliberately.
 - **React already uses delegation** — React attaches a single listener to the root element, not to each component. Native DOM delegation is still useful outside React contexts.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 17. Debouncing & Throttling
@@ -1706,7 +1702,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
 **Simple analogy:**
 - 🚿 **Debounce** = a shower that starts only after you stop adjusting the temperature (waits for you to settle)
 - 🚦 **Throttle** = a traffic light that only lets one car through every 30 seconds, regardless of queue length
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1802,7 +1798,7 @@ function InfiniteScroll() {
 - **Recreating debounced function on every render** — the timer resets each time. Use `useCallback` or define outside the component.
 - **Not cancelling on unmount** — a pending debounced call may fire after the component unmounts. Use `lodash.debounce`'s `.cancel()` in useEffect cleanup.
 - **Using `setTimeout` directly for throttle** — naive implementations miss edge cases. Prefer a proven library (lodash) or the implementations above.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 18. Error Boundaries & Error Handling
@@ -1810,7 +1806,7 @@ function InfiniteScroll() {
 #### 📌 Definitions
 > **Error Boundary** — A React class component that catches JavaScript errors anywhere in its child component tree and displays a fallback UI instead of crashing the whole app.
 > Without error boundaries, any render error crashes the **entire React tree** — users see a blank white page.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -1918,14 +1914,14 @@ window.addEventListener('unhandledrejection', (event) => {
 - **One top-level boundary is not enough** — a page-level fallback replaces the entire app UI. Wrap individual features for granular recovery.
 - **Error boundaries must be class components** — there is no `useErrorBoundary` hook in React yet (though libraries like `react-error-boundary` provide a wrapper).
 - **Not logging errors** — `componentDidCatch` is your opportunity to report to Sentry/Datadog. Don't silently swallow errors.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 19. Browser Storage
 
 #### 📌 Definition
 > Browsers provide multiple ways to persist data on the client side. Choosing the right storage mechanism depends on the size, sensitivity, lifespan, and access pattern of the data.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -2001,14 +1997,14 @@ let accessToken = null; // store in React state or module variable
 - **Storing sensitive data in localStorage** — XSS attackers can read anything in localStorage
 - **Forgetting to JSON.stringify/parse** — localStorage stores only strings; objects become `"[object Object]"`
 - **Private/Incognito mode** — storage may have very low limits or throw exceptions; always wrap in try/catch
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ### 20. REST APIs & HTTP Methods
 
 #### 📌 Definition
 > **REST** (Representational State Transfer) is an architectural style where resources (users, products, orders) are represented as URLs, and standard HTTP methods express what operation to perform on them. REST is **stateless** — every request must contain all the information needed to fulfil it.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 #### 🔍 Sub-topics
@@ -2132,7 +2128,7 @@ You cannot fix CORS errors in frontend code alone.
 - **Not checking `response.ok`** — silently treating 4xx/5xx responses as success is the #1 fetch mistake
 - **Confusing 401 vs 403** — 401 means "who are you?" (not authenticated). 403 means "I know who you are, but no" (not authorized).
 - **CORS errors are backend config** — you can't bypass CORS in the browser; the server must send the right headers
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 ## 🌟 Support This Project
@@ -2141,12 +2137,12 @@ You cannot fix CORS errors in frontend code alone.
 
 If this guide helped you prepare for an interview, get a new job, or level up your skills — please consider:
 
-**⭐ [Star this repository](https://github.com/yourusername/frontend-crack)** — it helps other developers find this guide!
+**⭐ [Star this repository](https://github.com/imran9663/frontend-crack)** — it helps other developers find this guide!
 
-**🍴 [Fork and contribute](https://github.com/yourusername/frontend-crack/fork)** — spotted an error? Have a better example? PRs are welcome!
+**🍴 [Fork and contribute](https://github.com/imran9663/frontend-crack/fork)** — spotted an error? Have a better example? PRs are welcome!
 
 **📢 Share it** with your developer friends, on LinkedIn, or in your Discord communities.
-
+<br/>[⬆️ Back to Top](#-table-of-contents)
 ---
 
 *Built with ❤️ for the developer community. Good luck with your interviews! 🚀*
